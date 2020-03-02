@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+     name: my-host
+spec:
+   containers:
+      - name: my-host
+        image: myimage:tag
+        env:
+         - name: color
+           value: yellow 
