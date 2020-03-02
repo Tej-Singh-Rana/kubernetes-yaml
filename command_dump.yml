@@ -1,0 +1,12 @@
+apiVersion: v1 
+kind: Pod
+metadata:
+     name: my-image1
+     labels:
+        app: my-image1
+spec: 
+    containers:
+      - name: my-image1
+        image: alpine
+        command: [ "ping" ]
+        args: [  8.8.8.8 ]

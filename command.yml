@@ -1,0 +1,12 @@
+apiVersion: v1 
+kind: Pod
+metadata:
+     name: my-image
+     labels:
+        app: my-image
+spec: 
+    containers:
+      - name: my-image
+        image: alpine
+      # command:                    #without giving command it takes docker image default cmd.
+        args: [  8.8.8.8 ]          #if we are not giving args in yaml file then it's follow only command not taking default value of docker image
