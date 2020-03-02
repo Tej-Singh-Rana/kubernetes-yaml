@@ -1,0 +1,16 @@
+#set it up resources. It takes from quota.
+apiVersion: v1
+kind: Pod
+metadata:
+    name: resource
+spec:
+   containers:
+      - name: resource
+        image: nginx
+        resources:
+            limits:
+               memory: 2Gi
+               cpu: 1
+            requests:
+                memory: 1Gi
+                cpu: 0.5

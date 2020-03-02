@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  creationTimestamp: 2020-03-02T12:58:11Z
+  name: quota
+  namespace: default
+  resourceVersion: "127240"
+  selfLink: /api/v1/namespaces/default/resourcequotas/quota
+  uid: 78e28d7c-5c85-11ea-b200-52540038a211
+spec:
+  hard:
+    limits.cpu: "2"
+    limits.memory: 3Gi
+    requests.cpu: "1"
+    requests.memory: 2Gi
+status:
+  hard:
+    limits.cpu: "2"
+    limits.memory: 3Gi
+    requests.cpu: "1"
+    requests.memory: 2Gi
+  used:
+    limits.cpu: "1"
+    limits.memory: 2Gi
+    requests.cpu: 500m
+    requests.memory: 1Gi

@@ -1,0 +1,12 @@
+#setup particular namespace quota limits including all containers. Total containers resources = quota .
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  #  namespace: "for namespace"
+     name: quota
+spec:
+   hard:
+     requests.cpu: "1"
+     requests.memory: 2Gi
+     limits.cpu: "2"
+     limits.memory: 3Gi
